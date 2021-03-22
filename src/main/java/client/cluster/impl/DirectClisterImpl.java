@@ -116,4 +116,7 @@ public class DirectClisterImpl extends AbstractBaseIcluster {
         return remoteServer.getIp ().concat ( "-" ).concat (remoteServer.getPort ());
     }
 
+    public List<RemoteServer> getserverList() {
+        return this.serverList;
+    }
 }

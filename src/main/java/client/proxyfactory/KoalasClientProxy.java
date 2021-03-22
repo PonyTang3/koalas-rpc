@@ -684,6 +684,10 @@ public class KoalasClientProxy implements FactoryBean<Object>, ApplicationContex
         if(icluster!= null) icluster.destroy ();
     }
 
+    public Icluster getIcluster() {
+        return this.icluster;
+    }
+
     public static void main(String[] args) {
         String a = "192.168.3.253:6666#10#thrift,192.168.3.253:6667#10#netty";
         System.out.println ( Arrays.toString ( a.split ( "[^0-9a-zA-Z_\\-\\.:#]+" ) ) );

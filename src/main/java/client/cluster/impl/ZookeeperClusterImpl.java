@@ -123,4 +123,7 @@ public class ZookeeperClusterImpl extends AbstractBaseIcluster {
         return remoteServer.getIp ().concat ( "-" ).concat (remoteServer.getPort ());
     }
 
+    public ZookeeperClient getZookeeperClient() {
+        return this.zookeeperClient;
+    }
 }
