@@ -21,7 +21,7 @@ public @interface KoalasServer {
     int maxLength() default Integer.MAX_VALUE;
     String env() default "dev";
     int weight() default  10;
-    String serverType() default  "NETTY";
+    String serverType() default  "THRIFT";
     int workQueue() default 0;
     String privateKey() default "";
     String publicKey() default "";
