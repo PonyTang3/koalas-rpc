@@ -46,7 +46,7 @@ public class AbstractKoalsServerPublisher {
     public int koalasThreadCount;
     public String env="dev";
     public int weight=10;
-    public String serverType="NETTY";
+    public String serverType="THRIFT";
     public int workQueue;
 
     //RSA service
